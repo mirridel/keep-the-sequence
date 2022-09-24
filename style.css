@@ -1,0 +1,83 @@
+body {
+	margin:auto;
+    width:1024px;
+    padding:10px;
+    background-color:#ebebeb;
+    font-size:14px;
+    font-family:Verdana;
+}
+
+header {
+    text-align: center;
+}
+
+figure {
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 440px;
+    margin: auto;
+}
+
+img {
+    max-width: 440px;
+    max-height: 300px;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 5px;
+    text-align: center;
+}
+/* Таблица */
+table {
+	font-size: 16px;
+	border-collapse: collapse;
+	text-align: center;
+}
+th, td {
+	border-style: solid;
+	border-width: 1px 1px 1px 1px;
+	border-color: #969696;
+	padding: 10px;
+	color: white
+}
+td {
+	background: #222;
+}
+
+input[type="radio"]{
+	display: none;
+}
+
+label{
+	position: relative;
+	color: #222;
+	font-size: 25px;
+	border: 2px solid #222;
+	border-radius: 5px;
+	padding: 15px 50px;
+	display: flex;
+	align-items: unset;
+}
+
+label:before {
+	position: absolute;
+	left: 8px;
+	content: "";
+	height: 25px;
+	width: 25px;
+	border: 3px solid #222;
+	border-radius: 50%;
+	margin-right: 20px;
+}
+
+input[type="radio"]:checked + label:before{
+	background-color: white;
+	height: 15px;
+	width: 15px;
+	border: 8px solid #222;
+	background-image: white;
+}

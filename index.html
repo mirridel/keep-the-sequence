@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Square Hit</title>
+    <link href="style.css" rel="stylesheet">
+    <meta charset="utf-8">
+</head>
+<body>
+
+<button id="start_btn">Начать игру!</button>
+<button disabled="true" id="stop_btn">Сброс</button>
+<select id="level_selector">
+    <option value="0">Легко</option>
+    <option value="1">Средне</option>
+    <option value="2">Сложно</option>
+</select>
+
+<h1>
+    <time>00:00:00</time>
+</h1>
+
+<div>
+    <span>Счет:</span>
+    <span id="score_tbl">0</span>
+</div>
+
+<div>
+    <span>Количество жизней:</span>
+    <span id="lives_tbl">0</span>
+</div>
+
+
+<div>
+    <canvas height="600" id="canvas" width="600">Ваш браузер не поддерживает JavaScript и HTML5!</canvas>
+</div>
+
+<div>
+    <p>Управление:</p>
+    <p>Перемещение указателя: Стрелки</p>
+    <p>Подтвердить выбор: Enter</p>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
